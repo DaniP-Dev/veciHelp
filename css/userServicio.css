@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+main {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f1f1f1;
@@ -39,4 +46,39 @@ body {
   font-size: 2rem;
   color: #333;
   margin-left: 5px;
+}
+
+/* Estilos generales para las tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  table, thead, tbody,  th, td, tr {
+    display: block;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: right;
+    position: relative;
+  }
+
+  th::before, td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
 }
