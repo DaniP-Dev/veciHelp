@@ -87,19 +87,23 @@ tr:nth-child(even) {
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
-  table, thead, tbody, th,  td, tr {
+  table, thead, tbody, th, td, tr {
     display: block;
+  }
+
+  .alinearTexto {
+    text-align: center;
   }
 
   .desaparecerMobile {
     display: none;
   }
-  tr{
-    border: 1px solid #ddd; 
+  tr {
+    border: 1px solid #ddd;
     margin-bottom: 10px;
   }
 
-  th, td {
+  th,  td {
     padding: 10px;
     text-align: right;
     position: relative;
