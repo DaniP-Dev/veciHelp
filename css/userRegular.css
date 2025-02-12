@@ -62,8 +62,15 @@ th, td {
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
-  table, thead, tbody,  th, td, tr {
+  table, thead, tbody, th,  td, tr {
     display: block;
+  }
+
+  .desaparecerMobile {
+    display: none;
+  }
+  tr{
+    border: 1px solid black; 
   }
 
   th, td {

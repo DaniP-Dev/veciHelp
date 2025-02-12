@@ -23,19 +23,21 @@ fetch('../json/login.json')
                         document.getElementById('direccionConjunto').textContent = userData.datosPersonales.direccionConjunto;
                         document.getElementById('fNacimientoUser').textContent = userData.datosPersonales.fNacimiento;
 
-                
                         // Mostrar historial de actividades en una tabla si existen
                         if (userData.historialActividades && userData.historialActividades.length > 0) {
                             const historialActividadesTable = document.getElementById('historialActividadesTable');
                             for (let i = 0; i < userData.historialActividades.length; i++) {
                                 const actividad = userData.historialActividades[i];
                                 const row = historialActividadesTable.insertRow();
-                                const cellFecha = row.insertCell(0);
-                                const cellActividad = row.insertCell(1);
-                                const cellEstado = row.insertCell(2);
-                                cellFecha.textContent = actividad.fecha;
-                                cellActividad.textContent = actividad.actividad;
-                                cellEstado.textContent = actividad.estado;
+                                const celdaFecha = row.insertCell(0);
+                                const celdaActividad = row.insertCell(1);
+                                const celdaEstado = row.insertCell(2);
+                                celdaFecha.textContent = actividad.fecha;
+                                celdaFecha.setAttribute('data-label', 'Fecha');
+                                celdaActividad.textContent = actividad.actividad;
+                                celdaActividad.setAttribute('data-label', 'Actividad');
+                                celdaEstado.textContent = actividad.estado;
+                                celdaEstado.setAttribute('data-label', 'Estado');
                             }
                         }
                     }

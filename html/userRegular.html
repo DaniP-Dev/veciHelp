@@ -17,35 +17,37 @@
         <button type="button" onclick="cerrarSesion()">Cerrar sesión</button>
     </header>
     <main>
-        <h2>Datos Personales</h2>
-        <table border="1">
-            <tr>
-                <th>Email</th>
-                <td><span id="emailUser"></span></td>
-            </tr>
-            <tr>
-                <th>Teléfono</th>
-                <td><span id="telefonoUser"></span></td>
-            </tr>
-            <tr>
-                <th>Conjunto Residencial</th>
-                <td><span id="conjuntoUser"></span></td>
-            </tr>
-            <tr>
-                <th>Dirección del Conjunto</th>
-                <td><span id="direccionConjunto"></span></td>
-            </tr>
-            <tr>
-                <th>Año de Nacimiento</th>
-                <td><span id="fNacimientoUser"></span></td>
-            </tr>
+        <table>
+            <h2>Datos Personales</h2>
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <td><span id="emailUser"></span></td>
+                </tr>
+                <tr>
+                    <th>Teléfono</th>
+                    <td><span id="telefonoUser"></span></td>
+                </tr>
+                <tr>
+                    <th>Conjunto Residencial</th>
+                    <td><span id="conjuntoUser"></span></td>
+                </tr>
+                <tr>
+                    <th>Dirección del Conjunto</th>
+                    <td><span id="direccionConjunto"></span></td>
+                </tr>
+                <tr>
+                    <th>Año de Nacimiento</th>
+                    <td><span id="fNacimientoUser"></span></td>
+                </tr>
+            </thead>
         </table>
 
 
-        <h2>Historial de Actividades</h2>
-        <table id="historialActividadesTable" border="1">
+        <table id="historialActividadesTable">
+            <h2>Historial de Actividades</h2>
             <thead>
-                <tr>
+                <tr class="desaparecerMobile">
                     <th>Fecha</th>
                     <th>Actividad</th>
                     <th>Estado</th>

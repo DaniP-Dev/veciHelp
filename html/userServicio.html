@@ -17,34 +17,36 @@
         <button type="button" onclick="cerrarSesion()">Cerrar sesión</button>
     </header>
     <main>
-        <table border="1">
+        <table>
             <h2>Datos Personales</h2>
-            <tr>
-                <th>Email</th>
-                <td><span id="emailUser"></span></td>
-            </tr>
-            <tr>
-                <th>Teléfono</th>
-                <td><span id="telefonoUser"></span></td>
-            </tr>
-            <tr>
-                <th>Conjunto Residencial</th>
-                <td><span id="conjuntoUser"></span></td>
-            </tr>
-            <tr>
-                <th>Dirección del Conjunto</th>
-                <td><span id="direccionConjunto"></span></td>
-            </tr>
-            <tr>
-                <th>Año de Nacimiento</th>
-                <td><span id="fNacimientoUser"></span></td>
-            </tr>
-        </table>
-
-        <table id="serviciosTable" border="1">
-            <h2>Servicios Ofrecidos</h2>
             <thead>
                 <tr>
+                    <th>Email</th>
+                    <td><span id="emailUser"></span></td>
+                </tr>
+                <tr>
+                    <th>Teléfono</th>
+                    <td><span id="telefonoUser"></span></td>
+                </tr>
+                <tr>
+                    <th>Conjunto Residencial</th>
+                    <td><span id="conjuntoUser"></span></td>
+                </tr>
+                <tr>
+                    <th>Dirección del Conjunto</th>
+                    <td><span id="direccionConjunto"></span></td>
+                </tr>
+                <tr>
+                    <th>Año de Nacimiento</th>
+                    <td><span id="fNacimientoUser"></span></td>
+                </tr>
+            </thead>
+        </table>
+
+        <table id="serviciosTable">
+            <h2>Servicios Ofrecidos</h2>
+            <thead>
+                <tr  class="desaparecerMobile">
                     <th>Tipo</th>
                     <th>Descripción</th>
                     <th>Tarifa</th>
@@ -55,10 +57,10 @@
             </tbody>
         </table>
 
-        <table id="historialServiciosTable" border="1">
+        <table id="historialServiciosTable">
             <h2>Historial de Servicios</h2>
             <thead>
-                <tr>
+                <tr class="desaparecerMobile">
                     <th>Fecha</th>
                     <th>Cliente</th>
                     <th>Servicio</th>
@@ -68,8 +70,8 @@
             <tbody>
                 <!-- Las filas del historial de servicios se agregarán aquí dinámicamente -->
             </tbody>
-        </table>    
-        
+        </table>
+
     </main>
 
     <script src="../js/userServicio.js"></script>
