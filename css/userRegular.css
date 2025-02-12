@@ -15,6 +15,14 @@ body {
   line-height: 1.6;
 }
 
+footer {
+  background: #6200ea;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
 .container {
   width: 100%;
   height: 10vh;
@@ -70,7 +78,8 @@ table {
   overflow: hidden;
 }
 
-th, td {
+th,
+td {
   padding: 12px;
   text-align: left;
   border-bottom: 1px solid #ddd;
@@ -87,7 +96,12 @@ tr:nth-child(even) {
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
-  table, thead, tbody, th, td, tr {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
     display: block;
   }
 
@@ -103,13 +117,15 @@ tr:nth-child(even) {
     margin-bottom: 10px;
   }
 
-  th,  td {
+  th,
+  td {
     padding: 10px;
     text-align: right;
     position: relative;
   }
 
-  th::before, td::before {
+  th::before,
+  td::before {
     content: attr(data-label);
     position: absolute;
     left: 0;

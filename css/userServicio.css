@@ -7,6 +7,13 @@
 main {
   padding: 20px;
 }
+footer {
+  background: #6200ea;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
 
 body {
   font-family: "Poppins", sans-serif;
