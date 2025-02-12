@@ -1,0 +1,139 @@
+[
+    {
+        "username": "user1",
+        "datosPersonales": {
+            "nombreCompleto": "Juan Pérez",
+            "fNacimiento": 1990,
+            "email": "juan@example.com",
+            "telefono": "123456789",
+            "conjuntoResidencial": "Puerto Tambora",
+            "direccionConjunto": "Cl 41 #19-125 casa 116, Soledad, Atlántico",
+            "genero": "Masculino"
+        },
+        "servicios": [
+            {
+                "tipo": "reparaciones",
+                "descripcion": "Reparación de electrodomésticos",
+                "tarifa": "80,000 COP/hora"
+            },
+            {
+                "tipo": "asesorias",
+                "descripcion": "Asesoría en tecnología",
+                "tarifa": "120,000 COP/hora"
+            }
+        ],
+        "historialServicios": [
+            {
+                "fecha": "2025-01-15",
+                "cliente": "Pedro Gómez",
+                "servicio": "Reparación de electrodomésticos",
+                "calificacion": 5
+            },
+            {
+                "fecha": "2025-01-20",
+                "cliente": "María López",
+                "servicio": "Asesoría en tecnología",
+                "calificacion": 4
+            }
+        ]
+    },
+    {
+        "username": "user2",
+        "datosPersonales": {
+            "nombreCompleto": "Pedro Gómez",
+            "fNacimiento": 1985,
+            "email": "pedro@example.com",
+            "telefono": "987654321",
+            "conjuntoResidencial": "Puerto Gaita",
+            "direccionConjunto": "Cl 41 # 17c-185, Soledad, Atlántico",
+            "genero": "Masculino"
+        },
+        "historialActividades": [
+            {
+                "fecha": "2025-01-10",
+                "actividad": "Solicitud de reparación de electrodomésticos",
+                "estado": "Completado"
+            },
+            {
+                "fecha": "2025-01-18",
+                "actividad": "Comentario en servicio de asesoría",
+                "estado": "Publicado"
+            }
+        ]
+    },
+    {
+        "username": "user3",
+        "datosPersonales": {
+            "nombreCompleto": "María López",
+            "fNacimiento": 1992,
+            "email": "maria@example.com",
+            "telefono": "456123789",
+            "conjuntoResidencial": "Puerto Acordeon",
+            "direccionConjunto": "Cra. 20 #44-182, Soledad, Atlántico",
+            "genero": "Femenino"
+        },
+        "historialActividades": [
+            {
+                "fecha": "2025-01-12",
+                "actividad": "Solicitud de asesoría en tecnología",
+                "estado": "Completado"
+            },
+            {
+                "fecha": "2025-01-22",
+                "actividad": "Comentario en servicio de reparación",
+                "estado": "Publicado"
+            }
+        ]
+    },
+    {
+        "username": "user4",
+        "datosPersonales": {
+            "nombreCompleto": "Ana Martínez",
+            "fNacimiento": 1988,
+            "email": "ana@example.com",
+            "telefono": "321654987",
+            "conjuntoResidencial": "Puerto Tambora",
+            "direccionConjunto": "Cl 41 #19-125 casa 116, Soledad, Atlántico",
+            "genero": "Femenino"
+        },
+        "servicios": [
+            {
+                "tipo": "cuidado de mascotas",
+                "descripcion": "Cuidado de perros y gatos",
+                "tarifa": "60,000 COP/hora"
+            }
+        ],
+        "historialServicios": [
+            {
+                "fecha": "2025-01-17",
+                "cliente": "Luis Fernández",
+                "servicio": "Cuidado de perros",
+                "calificacion": 5
+            }
+        ]
+    },
+    {
+        "username": "user5",
+        "datosPersonales": {
+            "nombreCompleto": "Luis Fernández",
+            "fNacimiento": 1995,
+            "email": "luis@example.com",
+            "telefono": "789123456",
+            "conjuntoResidencial": "Puerto Gaita",
+            "direccionConjunto": "Cl 41 # 17c-185, Soledad, Atlántico",
+            "genero": "Masculino"
+        },
+        "historialActividades": [
+            {
+                "fecha": "2025-01-14",
+                "actividad": "Solicitud de cuidado de mascotas",
+                "estado": "Completado"
+            },
+            {
+                "fecha": "2025-01-21",
+                "actividad": "Comentario en servicio de cuidado de mascotas",
+                "estado": "Publicado"
+            }
+        ]
+    }
+]
