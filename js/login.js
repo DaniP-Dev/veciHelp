@@ -1,5 +1,5 @@
 let manejarLogin;
-fetch('../json/usuarios.json')
+fetch('../json/login.json')
     .then(response => response.json())
     .then(users => {
         manejarLogin = () => {
