@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
-    <form id="loginForm" class="form">
-        <label for="username">Usuario:</label>
+    <div class="form">
+        <h2>Login</h2>
         <input type="text" id="username" placeholder="Usuario">
-        <br>
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" placeholder="Contraseña">
-        <br>
-        <button type="button" onclick="manejarLogin()">Iniciar sesión</button>
-    </form>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Contraseña">
+            <button type="button" class="ojoPassword" onclick="mostrarPassword()">
+                👁️
+            </button>
+        </div>
+        <button type="button" onclick="manejarLogin()" class="ojoPassword">Iniciar sesión</button>
+    </div>
 
     <script src="../js/login.js"></script>
 </body>

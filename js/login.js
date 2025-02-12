@@ -1,28 +1,27 @@
 let manejarLogin;
 fetch('../json/login.json')
     .then(response => response.json())
-    .then(users => {
+    .then(usuarios => {
         manejarLogin = () => {
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
+            const nombreUsuario = document.getElementById('username').value;
+            const contrasena = document.getElementById('password').value;
 
-            if (username === '') {
+            if (nombreUsuario === '') {
                 alert('Complete el campo de usuario.');
                 return;
             }
 
-            if (password === '') {
+            if (contrasena === '') {
                 alert('Complete el campo de contraseña.');
                 return;
             }
 
-            const user = users.find(u => u.username === username && u.password === password);
-            console.log('Usuario encontrado:', user);
+            const usuario = usuarios.find(u => u.username === nombreUsuario && u.password === contrasena);
 
-            if (user) {
-                localStorage.setItem('loggedInUser', JSON.stringify(user));
+            if (usuario) {
+                localStorage.setItem('loggedInUser', JSON.stringify(usuario));
 
-                if (user.role === 'admin') {
+                if (usuario.role === 'admin') {
                     window.location.href = '../html/userServicio.html';
                 } else {
                     window.location.href = '../html/userRegular.html';
@@ -33,3 +32,12 @@ fetch('../json/login.json')
         };
     })
     .catch(error => console.error('Error en el fetch', error));
+
+const mostrarPassword = () => {
+    const passwordField = document.getElementById('password');
+    passwordField.setAttribute('type', 'text');
+
+    setTimeout(() => {
+        passwordField.setAttribute('type', 'password');
+    }, 2000); // La contraseña será visible por 2 segundos
+};
