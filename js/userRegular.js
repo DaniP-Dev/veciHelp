@@ -1,6 +1,5 @@
 let cerrarSesion;
 
-// Fetch para login.json
 fetch('../json/login.json')
     .then(response => response.json())
     .then(users => {
@@ -15,7 +14,8 @@ fetch('../json/login.json')
                     const userData = dataUsers.find(u => u.username === user.username);
                     console.log('Datos de usuario:', userData);
 
-                    // Aquí puedes manejar los datos adicionales del usuario
+                    // desde aqui enpiezan las tablas
+                    // datos personales
                     if (userData) {
                         document.getElementById('emailUser').textContent = userData.datosPersonales.email;
                         document.getElementById('telefonoUser').textContent = userData.datosPersonales.telefono;
@@ -23,7 +23,7 @@ fetch('../json/login.json')
                         document.getElementById('direccionConjunto').textContent = userData.datosPersonales.direccionConjunto;
                         document.getElementById('fNacimientoUser').textContent = userData.datosPersonales.fNacimiento;
 
-                        // Mostrar historial de actividades en una tabla si existen
+                        // historial de actividades
                         if (userData.historialActividades && userData.historialActividades.length > 0) {
                             const historialActividadesTable = document.getElementById('historialActividadesTable');
                             for (let i = 0; i < userData.historialActividades.length; i++) {
@@ -42,7 +42,7 @@ fetch('../json/login.json')
                         }
                     }
                 })
-                .catch(error => console.error('Error en el fetch de dataUsers', error));
+                .catch(error => console.error('Error en el fetch de dataUsers.json', error));
         }
 
         cerrarSesion = () => {
@@ -51,4 +51,4 @@ fetch('../json/login.json')
             window.location.href = 'login.html';
         };
     })
-    .catch(error => console.error('Error en el fetch de login', error));
+    .catch(error => console.error('Error en el fetch de login.json', error));

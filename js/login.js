@@ -41,3 +41,6 @@ const mostrarPassword = () => {
         passwordField.setAttribute('type', 'password');
     }, 2000); // La contraseña será visible por 2 segundos
 };
+
+document.getElementById('mensaje').textContent = "user1 | user2 | user3 | user4 | user5";
+document.getElementById('mensaje2').textContent = "pass1 | pass2 | pass3 | pass4 | pass5";
