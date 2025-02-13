@@ -19,6 +19,7 @@ fetch('../json/login.json')
             const usuario = usuarios.find(u => u.username === nombreUsuario && u.password === contrasena);
 
             if (usuario) {
+                localStorage.removeItem('loggedInUser');
                 localStorage.setItem('loggedInUser', JSON.stringify(usuario));
 
                 if (usuario.role === 'admin') {
